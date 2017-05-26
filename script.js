@@ -5,8 +5,6 @@ var col, wh, lG;
 table.addEventListener('click', function(e) {
   col = window.getComputedStyle(e.target, null).backgroundColor;
   if (e.target.tagName === "TD") {
-    // col = e.target.tagName.backgroundColor;
-    console.log(col);
     wh = 'rgba(0, 0, 0, 0)';
     lG = 'rgb(144, 238, 144)';
     if (col === wh) {
